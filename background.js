@@ -21,7 +21,7 @@ const somethingTodo = data => {
 }
 
 browser.browserAction.onClicked.addListener(() => {
-  browser.tabs.query({currentWindow: true,})
+  browser.tabs.query({currentWindow: true})
     .then(getClientHeight)
     .then(somethingTodo)
     .catch(onError)
